@@ -4,12 +4,11 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import PrimeVue from 'primevue/config';
-import Aura from '@primeuix/themes/aura'; // 引入 Aura 主題 (目前預設推薦)
+import Aura from '@primeuix/themes/aura';
 
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
+const app = createApp(App);
+app.use(createPinia());
+app.use(router);
 app.use(PrimeVue, {
     theme: {
         preset: Aura
